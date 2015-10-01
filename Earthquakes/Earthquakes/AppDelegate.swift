@@ -16,7 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        guard let navController = window?.rootViewController as? UINavigationController else { return true }
+        guard let vc = navController.topViewController as? ViewController else { return true }
+
+        vc.globalMoc = self.managedObjectContext
+        
+        let mainMoc = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+        mainMoc.parentContext = self.managedObjectContext
+        vc.mainMoc = mainMoc
+
         return true
     }
 
@@ -86,7 +95,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var managedObjectContext: NSManagedObjectContext = {
         // Returns the managed object context for the application (which is already bound to the persistent store coordinator for the application.) This property is optional since there are legitimate error conditions that could cause the creation of the context to fail.
         let coordinator = self.persistentStoreCoordinator
-        var managedObjectContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+        var managedObjectContext = NSManagedObjectContext(concurrencyType: .PrivateQueueConcurrencyType)
         managedObjectContext.persistentStoreCoordinator = coordinator
         return managedObjectContext
     }()

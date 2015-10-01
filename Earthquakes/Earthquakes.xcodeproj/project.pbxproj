@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52139C7C1BBE5F76004452AD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52139C7A1BBE5F76004452AD /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		52139C7D1BBE5F76004452AD /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52139C7B1BBE5F76004452AD /* MapViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		52139C7F1BBE6279004452AD /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52139C7E1BBE6279004452AD /* Annotation.swift */; settings = {ASSET_TAGS = (); }; };
 		52C66F001BBD3DED00AEB3FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C66EFF1BBD3DED00AEB3FD /* AppDelegate.swift */; };
 		52C66F021BBD3DED00AEB3FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C66F011BBD3DED00AEB3FD /* ViewController.swift */; };
 		52C66F051BBD3DED00AEB3FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C66F031BBD3DED00AEB3FD /* Main.storyboard */; };
@@ -15,6 +18,12 @@
 		52C66F0D1BBD3DED00AEB3FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C66F0B1BBD3DED00AEB3FD /* LaunchScreen.storyboard */; };
 		52C66F181BBD3DED00AEB3FD /* EarthquakesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C66F171BBD3DED00AEB3FD /* EarthquakesTests.swift */; };
 		52C66F231BBD3DED00AEB3FD /* EarthquakesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C66F221BBD3DED00AEB3FD /* EarthquakesUITests.swift */; };
+		52C66F361BBD73F500AEB3FD /* WebInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C66F301BBD73F500AEB3FD /* WebInfo+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		52C66F371BBD73F500AEB3FD /* WebInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C66F311BBD73F500AEB3FD /* WebInfo.swift */; settings = {ASSET_TAGS = (); }; };
+		52C66F381BBD73F500AEB3FD /* GeoInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C66F321BBD73F500AEB3FD /* GeoInfo+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		52C66F391BBD73F500AEB3FD /* GeoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C66F331BBD73F500AEB3FD /* GeoInfo.swift */; settings = {ASSET_TAGS = (); }; };
+		52C66F3A1BBD73F500AEB3FD /* MainInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C66F341BBD73F500AEB3FD /* MainInfo+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		52C66F3B1BBD73F500AEB3FD /* MainInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C66F351BBD73F500AEB3FD /* MainInfo.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52139C7A1BBE5F76004452AD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		52139C7B1BBE5F76004452AD /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		52139C7E1BBE6279004452AD /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		52C66EFC1BBD3DED00AEB3FD /* Earthquakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C66EFF1BBD3DED00AEB3FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C66F011BBD3DED00AEB3FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +61,12 @@
 		52C66F1E1BBD3DED00AEB3FD /* EarthquakesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthquakesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C66F221BBD3DED00AEB3FD /* EarthquakesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesUITests.swift; sourceTree = "<group>"; };
 		52C66F241BBD3DED00AEB3FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C66F301BBD73F500AEB3FD /* WebInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WebInfo+CoreDataProperties.swift"; path = "../WebInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		52C66F311BBD73F500AEB3FD /* WebInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebInfo.swift; path = ../WebInfo.swift; sourceTree = "<group>"; };
+		52C66F321BBD73F500AEB3FD /* GeoInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GeoInfo+CoreDataProperties.swift"; path = "../GeoInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		52C66F331BBD73F500AEB3FD /* GeoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeoInfo.swift; path = ../GeoInfo.swift; sourceTree = "<group>"; };
+		52C66F341BBD73F500AEB3FD /* MainInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MainInfo+CoreDataProperties.swift"; path = "../MainInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		52C66F351BBD73F500AEB3FD /* MainInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainInfo.swift; path = ../MainInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +117,12 @@
 		52C66EFE1BBD3DED00AEB3FD /* Earthquakes */ = {
 			isa = PBXGroup;
 			children = (
+				52C66F301BBD73F500AEB3FD /* WebInfo+CoreDataProperties.swift */,
+				52C66F311BBD73F500AEB3FD /* WebInfo.swift */,
+				52C66F321BBD73F500AEB3FD /* GeoInfo+CoreDataProperties.swift */,
+				52C66F331BBD73F500AEB3FD /* GeoInfo.swift */,
+				52C66F341BBD73F500AEB3FD /* MainInfo+CoreDataProperties.swift */,
+				52C66F351BBD73F500AEB3FD /* MainInfo.swift */,
 				52C66EFF1BBD3DED00AEB3FD /* AppDelegate.swift */,
 				52C66F011BBD3DED00AEB3FD /* ViewController.swift */,
 				52C66F031BBD3DED00AEB3FD /* Main.storyboard */,
@@ -106,6 +130,9 @@
 				52C66F0B1BBD3DED00AEB3FD /* LaunchScreen.storyboard */,
 				52C66F0E1BBD3DED00AEB3FD /* Info.plist */,
 				52C66F061BBD3DED00AEB3FD /* Earthquakes.xcdatamodeld */,
+				52139C7A1BBE5F76004452AD /* MapViewController.swift */,
+				52139C7B1BBE5F76004452AD /* MapViewController.xib */,
+				52139C7E1BBE6279004452AD /* Annotation.swift */,
 			);
 			path = Earthquakes;
 			sourceTree = "<group>";
@@ -237,6 +264,7 @@
 				52C66F0D1BBD3DED00AEB3FD /* LaunchScreen.storyboard in Resources */,
 				52C66F0A1BBD3DED00AEB3FD /* Assets.xcassets in Resources */,
 				52C66F051BBD3DED00AEB3FD /* Main.storyboard in Resources */,
+				52139C7D1BBE5F76004452AD /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +289,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C66F3A1BBD73F500AEB3FD /* MainInfo+CoreDataProperties.swift in Sources */,
+				52C66F361BBD73F500AEB3FD /* WebInfo+CoreDataProperties.swift in Sources */,
 				52C66F081BBD3DED00AEB3FD /* Earthquakes.xcdatamodeld in Sources */,
+				52139C7C1BBE5F76004452AD /* MapViewController.swift in Sources */,
+				52C66F381BBD73F500AEB3FD /* GeoInfo+CoreDataProperties.swift in Sources */,
+				52C66F391BBD73F500AEB3FD /* GeoInfo.swift in Sources */,
 				52C66F021BBD3DED00AEB3FD /* ViewController.swift in Sources */,
+				52C66F371BBD73F500AEB3FD /* WebInfo.swift in Sources */,
+				52139C7F1BBE6279004452AD /* Annotation.swift in Sources */,
 				52C66F001BBD3DED00AEB3FD /* AppDelegate.swift in Sources */,
+				52C66F3B1BBD73F500AEB3FD /* MainInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +526,7 @@
 				52C66F291BBD3DED00AEB3FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52C66F2A1BBD3DED00AEB3FD /* Build configuration list for PBXNativeTarget "EarthquakesTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +535,7 @@
 				52C66F2C1BBD3DED00AEB3FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52C66F2D1BBD3DED00AEB3FD /* Build configuration list for PBXNativeTarget "EarthquakesUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +544,7 @@
 				52C66F2F1BBD3DED00AEB3FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
