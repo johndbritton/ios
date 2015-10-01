@@ -8,14 +8,28 @@
 
 import UIKit
 
+@IBDesignable
 class MyCustomView: UIView {
+    
+    @IBInspectable var strokeStart: CGFloat = 0
+    @IBInspectable var lineColor: UIColor = UIColor.blackColor()
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
 
+        let lineWidth: CGFloat = 6.0
+
+        let newRect = CGRect(x: rect.origin.x+lineWidth, y: rect.origin.y+lineWidth, width: rect.width-2*lineWidth, height: rect.height-2*lineWidth)
+        
+        let bezierPath = UIBezierPath(ovalInRect: newRect)
+        
+        let circle = CAShapeLayer()
+        circle.path = bezierPath.CGPath
+        circle.lineWidth = 2.0
+        circle.fillColor = UIColor.clearColor().CGColor
+        circle.strokeColor = lineColor.CGColor
+        circle.strokeStart = strokeStart / CGFloat(10.0)
+        circle.strokeEnd = 1
+        
+        layer.addSublayer(circle)
+    }
 }
